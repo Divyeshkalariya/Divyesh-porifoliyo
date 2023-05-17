@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.circle-text {
+    /* font-size: .9rem; */
+}
+
+.circle-info-text {
+    transform: translate(0, -6%); /* position text outside of circle */
+    font-size: .5rem;
+}
+
+.circle-container {
+    margin: 8% !important;
+}

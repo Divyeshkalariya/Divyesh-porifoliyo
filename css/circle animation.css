@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding:0 ;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100%;
+    background: rgb(0, 0, 0);
+    animation: bor 7.5s linear  infinite;
+    overflow-x: hidden !important;
+}
+
+@keyframes bor{
+    0%{
+        filter: hue-rotate(0deg);
+        /* filter:brightness(0%); */
+    }
+    50%{
+        filter: hue-rotate(360deg);
+        filter:brightness(100%);
+
+    }
+    100%{
+        filter: hue-rotate(360deg);
+        /* filter:brightness(0%); */
+    }
+}
+.circle1{
+    position: relative;
+    width: 120%;
+    height: 120%;
+}
+.circle1 span{
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    height: 100%;
+    width: 100%;
+}
+.circle1 span::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 15px;
+    height: 15px;
+    background-color:  yellow;
+    border-radius: 50%;
+    box-shadow: 0 0 10px  yellow,
+                0 0 20px  yellow,
+                0 0 40px  yellow,
+                0 0 60px  yellow,
+                0 0 80px  yellow,
+                0 0 100px  yellow;
+    animation: anim 10s reverse infinite;
+}
+@keyframes anim{
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0)
+    }
+}
+.circle2{
+    position: relative;
+    width: 120%;
+    height: 120%;
+}
+.circle2 span{
+    position: absolute;
+    top: 150px;
+    left: 400px;
+    height: 100%;
+    width: 100%;
+}
+.circle2 span::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background-color:  red;
+    border-radius: 50%;
+    box-shadow: 0 0 10px  red,
+                0 0 20px  red,
+                0 0 40px  red,
+                0 0 60px  red,
+                0 0 80px  red,
+                0 0 100px  red;
+    animation: cir2 10s linear infinite;
+}
+@keyframes cir2{
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0)
+    }
+}
+.circle3{
+    position: relative;
+    width: 120%;
+    height: 120%;
+}
+.circle3 span{
+    position: absolute;
+    top: 250px;
+    left: 700px;
+    height: 100%;
+    width: 100%;
+}
+.circle3 span::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background-color:  #00ff0a;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #00ff0a,
+                0 0 20px #00ff02,
+                0 0 40px #00ff0a,
+                0 0 60px #00ff0a,
+                0 0 80px #00ff0a,
+                0 0 100px #00ff0a;
+    animation: cir2 8s reverse infinite;
+}
+@keyframes cir3{
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0)
+    }
+}
+.circle4{
+    position: relative;
+    width: 120%;
+    height: 120%;
+}
+.circle4 span{
+    position: absolute;
+    top: 420px;
+    left: 400px;
+    height: 100%;
+    width: 100%;
+}
+.circle4 span::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background-color:  white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px  white,
+                0 0 20px  pink,
+                0 0 40px  violet,
+                0 0 60px black,
+                0 0 80px yellow,
+                0 0 100px blue;
+    animation: cir2 10s reverse infinite;
+}
+@keyframes cir4{
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0)
+    }
+}
+.circle5{
+    position: relative;
+    width: 120%;
+    height: 120%;
+}
+.circle5 span{
+    position: absolute;
+    top: 570px;
+    left: 200px;
+    height: 100%;
+    width: 100%;
+}
+.circle5 span::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background-color:  #4C3AE3;
+    border-radius: 50%;
+    box-shadow: 0 0 10px  #4C3AE3,
+                0 0 20px  #4C3AE3,
+                0 0 40px  #4C3AE3,
+                0 0 60px  #4C3AE3,
+                0 0 80px  #4C3AE3,
+                0 0 100px  #4C3AE3,
+                0 0 120px  #4C3AE3,
+                0 0 140px  #4C3AE3;
+    animation: cir2 15s reverse infinite;
+}
+@keyframes cir5{
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0)
+    }
+}
+.circle6{
+    position: relative;
+    width: 120%;
+    height: 120%;
+}
+.circle6 span{
+    position: absolute;
+    top: 500px;
+    left: 800px;
+    height: 100%;
+    width: 100%;
+}
+.circle6 span::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background-color:  #46B2E0;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #46B2E0,
+                0 0 20px #46B2E0,
+                0 0 40px #46B2E0,
+                0 0 60px #46B2E0,
+                0 0 80px #46B2E0,
+                0 0 100px #46B2E0;
+    animation: cir2 10s linear infinite;
+}
+@keyframes cir6{
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0)
+    }
+}
+.circle7{
+    position: relative;
+    width: 120%;
+    height: 120%;
+}
+.circle7 span{
+    position: absolute;
+    top: 100px;
+    left: 900px;
+    height: 100%;
+    width: 100%;
+}
+.circle7 span::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background-color:  #DDD101;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #DDD101,
+                0 0 20px #DDD101,
+                0 0 40px #DDD101,
+                0 0 60px #DDD101,
+                0 0 80px #DDD101,
+                0 0 100px #DDD101;
+    animation: cir2 15s linear infinite;
+}
+@keyframes cir7{
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0)
+    }
+}
